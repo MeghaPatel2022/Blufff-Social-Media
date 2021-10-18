@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.TBI.Client.Bluff">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission-sdk-23 android:name="android.permission.VIBRATE" />
+    <uses-permission-sdk-23 android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/luncher_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/luncher_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/ActivityTheme.Primary.Base.Dark"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon,android:allowBackup">
+
+        <activity android:name=".Activity.Post.LikeActivity"></activity>
+        <activity android:name=".UserPages.IntroActivity" />
+        <activity android:name=".Activity.Post.Post3dVideoActivity" />
+        <activity android:name=".Activity.Chat.GroupActivity" />
+        <activity android:name=".Activity.Post.Post3dActivity" />
+        <activity android:name=".Activity.Post.PostVideoActivity" />
+        <activity android:name=".Activity.Post.ReportedActivity" />
+        <activity android:name=".Activity.Post.CommentActivity" />
+        <activity android:name=".Activity.WallPage.PersonKnowActivity" />
+        <activity android:name=".Activity.Chat.ChatSettingsActivity" />
+        <activity android:name=".Activity.Chat.OptionChatActivity" />
+        <activity android:name=".Activity.Profile.SOSReport" />
+        <activity android:name=".Activity.WallPage.NearByUserActivity" />
+        <activity android:name=".Activity.WallPage.ChatActivity" />
+        <activity android:name=".Activity.Settings.AboutBluff" />
+        <activity android:name=".Activity.Settings.SupportActivity" />
+        <activity android:name=".Activity.Settings.AccountActions" />
+        <activity android:name=".Activity.Settings.MoreInfo" />
+        <activity android:name=".Activity.Settings.FeedBackActivity" />
+        <activity android:name=".Activity.Settings.AdditionalServices" />
+        <activity android:name=".Activity.PermissionActivity" />
+        <activity android:name=".Activity.Settings.ExtrasActivity" />
+        <activity android:name=".Activity.Settings.NotificationSettingsActivity" />
+        <activity android:name=".Activity.Post.DrawAtivity" />
+
+        <service android:name=".Utils.GpsTracker" />
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".Activity.Mains.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Profile.ProfilePage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".UserPages.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Activity.Map.FriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Map.SOSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Home.OpenCamera1"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.applozic.audiovideo.activity.AudioCallActivityV2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityTheme.Primary.Base.Dark" />
+        <activity
+            android:name="com.applozic.audiovideo.activity.CallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityTheme.Primary.Base.Dark" />
+        <activity
+            android:name="com.applozic.audiovideo.activity.VideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityTheme.Primary.Base.Dark" />
+        <activity
+            android:name=".Activity.Mains.BottombarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.Profile.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Profile.OtherUserProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Profile.FriendList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Settings.Setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Profile.Notification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Post.PostDetailPage"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.Post.PostDetailPage1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.Settings.AccountPrivacy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Settings.BlockList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Post.PostCreate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Post.Locationsearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Settings.Saved_Post"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoryStatus.StatusStoriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Post.Post_Story"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BusinessForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Chat.CreateChat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Chat.GroupSetNameImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Chat.Hide_ArchievedChat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Post.CreateStory"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.Post.EditPost"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Activity.WallPage.GlobalSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BannerDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Post.ShowMultipleIamges"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Chat.AddContactToGroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TokenList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TokenDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Post.TagUser"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.applozic.application.key"
+            android:value="@string/application_key" />
+        <meta-data
+            android:name="activity.open.on.notification"
+            android:value="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity" /> <!-- NOTE : Do NOT change this value -->
+        <meta-data
+            android:name="com.package.name"
+            android:value="${applicationId}" />
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+        <meta-data
+            android:name="com.applozic.mobicomkit.notification.smallIcon"
+            android:resource="@mipmap/luncher_icon" /> <!-- Replace this with a valid resource name for Launcher white Icon -->
+        <meta-data
+            android:name="main_folder_name"
+            android:value="Blufff"
+            tools:node="replace" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.applozic.server.url"
+            android:value="@string/default_server_url" />
+        <meta-data
+            android:name="com.applozic.mqtt.server.url"
+            android:value="@string/default_mqtt_server_url" />
+        <!--
+  <meta-data
+              android:name="com.google.android.maps.v2.API_KEY"
+              android:value="@string/google_maps_key" />
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

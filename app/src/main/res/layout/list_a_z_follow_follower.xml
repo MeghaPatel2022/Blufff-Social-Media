@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_alphabet_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="A"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="B"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="C"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="D"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="E"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="F"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_G"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="G"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_G"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_H"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="H"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_H"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_I"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="I"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_I"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_J"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="J"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_J"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_K"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="K"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_K"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_L"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="L"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_L"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_M"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="M"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_M"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_N"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="N"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_N"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_O"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="O"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_O"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_P"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="P"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_P"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_Q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="Q"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_Q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="R"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="S"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_T"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="T"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_T"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_U"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="U"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_U"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_V"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="V"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_V"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_W"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="W"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_W"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_X"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="X"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_X"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_Y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="Y"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_Y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_alphabet_Z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:text="Z"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_Z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_7sdp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnshare"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_box"
+            android:backgroundTint="@android:color/transparent"
+            android:tint="@android:color/transparent"></ImageView>
+
+        <FrameLayout
+            android:id="@+id/framecreate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/green_box"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/imgcreate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_box"
+                android:backgroundTint="@android:color/transparent"
+                android:tint="@android:color/transparent"
+                android:visibility="gone"></ImageView>
+
+
+            <TextView
+                android:id="@+id/edtcreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp"
+                android:textSize="20dp"
+                android:visibility="visible"></TextView>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imgclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right|end"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/cancel"></ImageView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnshare"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_profile"
+        android:backgroundTint="?attr/colorPrimary"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text="Share"
+        android:textAllCaps="false"
+        android:textColor="?attr/background"
+        android:textSize="16dp"></Button>
+</RelativeLayout>

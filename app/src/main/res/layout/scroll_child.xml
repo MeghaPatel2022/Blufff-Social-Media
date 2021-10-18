@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="5dp"
+        android:paddingRight="@dimen/dp15"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:src="@drawable/rating_icon" />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Rohit Singh"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imgscroll"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:tint="?attr/colorPrimary"
+            android:visibility="gone" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="data"
+            android:textColor="?attr/colorPrimary"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

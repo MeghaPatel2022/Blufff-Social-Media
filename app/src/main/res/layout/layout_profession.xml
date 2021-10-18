@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtspinneritem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/poppins_regular"
+    android:paddingTop="13dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="13dp"
+    android:textColor="@color/blacklight"
+    android:textSize="18dp" />

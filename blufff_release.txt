@@ -1,0 +1,3 @@
+Key Alias: tbiclientblufff
+Key store Pass: tbiclientblufff
+SHA1: DC:79:6C:66:F7:F0:58:18:15:59:8D:69:64:EF:48:90:DB:72:21:F8

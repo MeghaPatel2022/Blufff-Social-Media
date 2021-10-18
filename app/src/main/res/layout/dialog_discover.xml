@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_newpost1"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/weburl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/dialog_newpost1"></WebView>
+
+    <ImageView
+        android:id="@+id/imgclose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right|end"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/circle_indicator"
+        android:backgroundTint="#80000000"
+        android:padding="12dp"
+        android:src="@drawable/cancel"></ImageView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avloading"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        app:indicatorColor="@color/black"
+        app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/lnsubscribed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/discoverweb"
+            android:elevation="100dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imgsubscribed"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/blufffscribed"></ImageView>
+
+            <TextView
+                android:id="@+id/txtsubscribed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Subscribed"
+                android:textColor="@color/white"
+                android:textSize="16dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnthird"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/discoverweb"
+            android:elevation="100dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imgshare"
+                android:layout_width="25dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/share_white"
+                android:tint="@color/black"></ImageView>
+
+            <TextView
+                android:id="@+id/txtthirdparty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16dp"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

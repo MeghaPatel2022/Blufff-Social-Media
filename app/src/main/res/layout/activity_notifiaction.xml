@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/reltitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:singleLine="true"
+                android:text="Notifications"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imgsearch"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/search1"
+                android:tint="?attr/colorPrimary"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchnotification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/chat_box"
+        android:backgroundTint="#25C6C4C4"
+        android:visibility="gone"
+        app:closeIcon="@drawable/close"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="Search"
+        app:searchHintIcon="@drawable/search"
+        app:searchIcon="@drawable/search"
+        app:showDividers="none"
+        app:theme="@style/AppSearchView" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:padding="10dp"
+        android:smoothScrollbar="true"
+        android:visibility="gone" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabsuggest"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="?attr/background"
+        android:visibility="visible"
+        app:tabBackground="?attr/background"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/blue"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"
+        app:tabMaxWidth="@dimen/_95sdp"
+        app:tabMinWidth="@dimen/_80sdp"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/MyTextViewStyle" />
+
+    <TextView
+        android:id="@+id/txtempty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="No Notification yet."
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ll_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_6sdp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Notification"
+            android:textSize="@dimen/_17sdp" />
+
+        <View
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#c0c0c0" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_all_notification" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_suggested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_star"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

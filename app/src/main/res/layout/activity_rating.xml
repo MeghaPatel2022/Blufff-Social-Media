@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/dp5">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_left_black_24dp" />
+
+        <ImageView
+            android:id="@+id/img_done"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_arrow_right_black_24dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="@dimen/dp150">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="-47dp"
+            android:fontFamily="@font/galada_regular"
+            android:gravity="center"
+            android:text="Blufff"
+            android:textColor="@color/white"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="90dp"
+            android:fontFamily="@font/galada_regular"
+            android:gravity="center"
+            android:text="Stars"
+            android:textColor="@color/yellow"
+            android:textSize="40dp" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:progressDrawable="@drawable/ratingbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_avg_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/dp15" />
+
+    </LinearLayout>
+
+</RelativeLayout>

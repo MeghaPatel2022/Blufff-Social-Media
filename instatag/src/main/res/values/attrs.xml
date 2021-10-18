@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019 Harsh Sharma
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<resources>
+    <declare-styleable name="InstaTag">
+        <attr name="canWeAddTags" format="boolean" />
+        <!--Used for restricting tag movement when we are not tagging photos.
+        (For example we are using InstaTag inside RecyclerView we have to provide false -->
+        <attr name="overrideDefaultColor" format="color" />
+        <!--Used to change Default Color being used for Tag Background & Tag Top Carrot-->
+        <attr name="instaTextColor" format="color" />
+        <!--Used for changing Tag text Color-->
+        <attr name="instaBackgroundColor" format="color" />
+        <!--Used for changing background color for Tag background-->
+        <attr name="carrotTopColor" format="color" />
+        <!--Used for changing Top Carrot color-->
+        <attr name="tagTextBackground" format="reference" />
+        <!--Used for changing tag background with custom background -->
+        <attr name="carrotTopBackground" format="reference" />
+        <!--Used for replacing top carrot background with custom background-->
+        <attr name="hideAnimation" format="reference" />
+        <!--Used for animating tag while hiding-->
+        <attr name="showAnimation" format="reference" />
+        <!--Used for animating tag while showing-->
+        <attr name="likeColor" format="color" />
+        <!--Used for setting like color-->
+        <attr name="likeSize" format="dimension" />
+        <!--Used for setting like size-->
+        <attr name="likeSrc" format="reference" />
+        <!--Used for setting source for like-->
+    </declare-styleable>
+</resources>

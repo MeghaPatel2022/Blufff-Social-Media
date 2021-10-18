@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/background"
+        android:elevation="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Edit Info"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtdone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|end"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Done"
+                android:textColor="@color/blacklight"
+                android:textSize="16dp" />
+
+        </FrameLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imguser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/placeholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtuname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:singleLine="true"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Add Location..."
+                    android:maxLines="2"
+                    android:textColor="@color/blacklight"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/indicator"
+                android:layout_marginBottom="3dp">
+
+                <com.harsh.instatag.InstaTag
+                    android:id="@+id/instatagview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="visible"
+                    app:canWeAddTags="false"
+                    app:instaTextColor="@android:color/white" />
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpagerimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </FrameLayout>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_above="@+id/edtdescription"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                app:ci_drawable="@drawable/circle_inactive_indi"
+                app:ci_drawable_unselected="@drawable/circle_indicator"
+                app:ci_height="5dp"
+                app:ci_width="5dp" />
+
+            <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+                android:id="@+id/edtdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start"
+                android:hint="Write a caption..."
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="?attr/colorPrimary"
+                android:textColorHint="#767676"
+                android:textSize="16dp"
+                app:socialFlags="hashtag|mention" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffffd300</color>
+    <color name="navigationBarColor">#000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#175B9F</color>
+    <color name="black">#000000</color>
+    <color name="greendark">#00923F</color>
+    <color name="darkgrey">#8A8787</color>
+
+    <color name="pink">#C544F0</color>
+    <color name="purple">#5048F3</color>
+
+    <color name="blacklight">#EB353440</color>
+    <color name="greylight">#CFCDCD</color>
+    <color name="grey">#EBE9E9</color>
+    <color name="textcolor">#E93423</color>
+    <color name="lightdrey">#767676</color>
+
+    <color name="bubble_actions_background_transparent">#00000000</color>
+    <color name="bubble_actions_background_darkened">#00000000</color>
+    <color name="bubble_actions_text_background">#F7000000</color>
+    <color name="bubble_actions_text_color">#eeffffff</color>
+
+    <color name="skyblue">#1b76d3</color>
+    <color name="blackdark">#292929</color>
+
+
+    <color name="ss_progress_startColor">#ffffd300</color>
+    <color name="ss_progress_endColor">#ffffcb00</color>
+    <color name="ss_progress_centerColor">#ffffb600</color>
+
+    <color name="ss_secondaryProgress_startColor">#80ffd300</color>
+    <color name="ss_secondaryProgress_endColor">#a0ffcb00</color>
+    <color name="ss_secondaryProgress_centerColor">#80ffb600</color>
+
+    <color name="ss_background_startColor">#ff9d9e9d</color>
+    <color name="ss_background_endColor">#ff747674</color>
+    <color name="ss_background_centerColor">#ff5a5d5a</color>
+
+    <color name="follow_accept_color">#1592E6</color>
+    <color name="decline_color">#FF3B3B</color>
+
+    <color name="color1">#3897F2</color>
+    <color name="color2">#65C251</color>
+    <color name="color3">#65C251</color>
+    <color name="color4">#FC8D33</color>
+    <color name="color5">#EA4B57</color>
+    <color name="color6">#D70767</color>
+    <color name="color7">#A804BB</color>
+    <color name="color8">#262529</color>
+    <color name="color9">#555555</color>
+    <color name="color10">#737277</color>
+    <color name="color11">#B2B2B2</color>
+    <color name="color12">#C7C7C7</color>
+    <color name="color13">#DBDBDB</color>
+    <color name="color14">#EFF0EC</color>
+    <color name="color15">#EF0013</color>
+    <color name="color23">#7EC5606B</color>
+    <color name="color16">#ED858E</color>
+    <color name="color17">#FBD1D2</color>
+    <color name="color18">#FFDAB3</color>
+    <color name="color19">#FFC482</color>
+    <color name="color20">#96653A</color>
+    <color name="color21">#96653A</color>
+    <color name="color22">#1C4928</color>
+
+
+    <color name="blue_color_picker">#0066FF</color>
+
+
+    <color name="text_select_color">#329EFF</color>
+    <color name="text_unselect_color">#8A8989</color>
+
+    <color name="alpha_black">#AB000000</color>
+
+    <color name="following_color">#22BE6D</color>
+
+</resources>

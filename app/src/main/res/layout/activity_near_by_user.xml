@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity.WallPage.NearByUserActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="match_parent"
+            android:src="@drawable/slide_arrow_left"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/img_back"
+            android:gravity="center|start"
+            android:text="Nearby people"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+        <ImageView
+            android:layout_width="?actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_13sdp"
+            android:src="@drawable/search1"
+            android:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_header"
+        android:background="@color/black">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_nearby_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_not_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Near By users are now."
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

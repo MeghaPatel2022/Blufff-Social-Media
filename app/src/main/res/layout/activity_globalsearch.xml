@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginBottom="13dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_nearBy"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/nearby"
+                android:tint="?attr/colorPrimary"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_toStartOf="@+id/img_chat"
+                android:layout_toEndOf="@+id/img_nearBy"
+                android:background="@drawable/chat_box"
+                android:backgroundTint="#25C6C4C4">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchdiscover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="visible"
+                    app:closeIcon="@drawable/close"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Search"
+                    app:searchHintIcon="@drawable/search"
+                    app:searchIcon="@drawable/search"
+                    app:showDividers="none"
+                    app:theme="@style/AppSearchView" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabsuggest"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="?attr/background"
+        android:visibility="gone"
+        app:tabBackground="?attr/background"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/blue"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"
+        app:tabMaxWidth="@dimen/_100sdp"
+        app:tabMinWidth="@dimen/_60sdp"
+        app:tabMode="auto"
+        app:tabTextAppearance="@style/MyTextViewStyle" />
+
+    <LinearLayout
+        android:id="@+id/lnnearby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Near By People"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="18dp" />
+
+        <ListView
+            android:id="@+id/listnearby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="?attr/background"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listsearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listpeople"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listhashtag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listlocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtempty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="No Search result found"
+        android:textColor="@color/blacklight"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gridpost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="20dp"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Business Form"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="PERSONAL INFORMATION"
+                android:textColor="@color/textcolor"
+                android:textSize="20dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="UserName"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edtuname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Mobile Number"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:ccp_defaultCode="91"
+                        app:ccp_defaultNameCode="IN"
+                        app:ccp_hideNameCode="true"
+                        app:ccp_hidePhoneCode="true"
+                        app:ccp_textColor="?attr/colorPrimary"
+                        app:ccp_textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/edtmobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorPrimary"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Email Address"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="DOB"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/edtdob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Address"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/edtaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Legal Document"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/lnlegaldocument"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:src="@drawable/document"
+                        android:tint="?attr/colorPrimary"></ImageView>
+
+                    <TextView
+                        android:id="@+id/edtlegaldocument"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:singleLine="true"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorPrimary"></View>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="BUSINESS INFORMATION"
+                android:textColor="@color/textcolor"
+                android:textSize="20dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtblog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_profile"
+                        android:backgroundTint="?colorPrimary"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="35dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="35dp"
+                        android:paddingBottom="5dp"
+                        android:text="Blog"
+                        android:textColor="?attr/background"
+                        android:textSize="16dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtbusiness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/edit_profile"
+                        android:backgroundTint="@color/blacklight"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="25dp"
+                        android:paddingBottom="5dp"
+                        android:text="Business"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Name"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edtname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Logo"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/lnlogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/document"
+                        android:tint="?attr/colorPrimary"></ImageView>
+
+                    <TextView
+                        android:id="@+id/edtblogo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:singleLine="true"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorPrimary"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Photo"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/lnphoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/document"
+                        android:tint="?attr/colorPrimary"></ImageView>
+
+                    <TextView
+                        android:id="@+id/edtphoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:singleLine="true"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorPrimary"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Mobile Number"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/ccpbusiness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:ccp_defaultCode="91"
+                        app:ccp_defaultNameCode="IN"
+                        app:ccp_hideNameCode="true"
+                        app:ccp_hidePhoneCode="true"
+                        app:ccp_textColor="?attr/colorPrimary"
+                        app:ccp_textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/edtmobilebusi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorPrimary"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Business Email Address"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/edtbusinessemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Business Location"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/edtbusinesslocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Business Type"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autobusinesstype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="?colorPrimary">
+
+                </AutoCompleteTextView>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/txtbusinessw1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_profile"
+                        android:backgroundTint="?colorPrimary"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="5dp"
+                        android:text="Business 1"
+                        android:textColor="?attr/background"
+                        android:textSize="16dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtbusinees2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_profile"
+                        android:backgroundTint="@color/blacklight"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="5dp"
+                        android:text="Business 2"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="16dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtbusinees3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_profile"
+                        android:backgroundTint="@color/blacklight"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="5dp"
+                        android:text="Business 2"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="16dp"></TextView>
+
+
+                </LinearLayout>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Business Sub-topics"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/edtsubtopic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Business Proof"
+                    android:textColor="@color/blacklight"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/lnbusinessproof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/document"
+                        android:tint="?attr/colorPrimary"></ImageView>
+
+                    <TextView
+                        android:id="@+id/edtbusinessproof"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:singleLine="true"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/colorPrimary"></View>
+
+                <Button
+                    android:id="@+id/btnsubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_profile"
+                    android:backgroundTint="@color/textcolor"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
+                    android:text="Submit"
+                    android:textColor="?attr/background"
+                    android:textSize="20dp"></Button>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

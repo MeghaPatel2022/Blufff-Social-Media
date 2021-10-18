@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_back_bday"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/dp15"
+        android:src="@drawable/slide_arrow_left"
+        android:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/img_bday"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80sp"
+        android:src="@drawable/birthday" />
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_bday"
+        android:layout_marginTop="@dimen/dp20"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:text="@string/date_of_bday"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/header_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_title"
+        android:layout_marginTop="@dimen/dp20"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:text="This won't be pat of your public profile."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/header_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_title1"
+        android:layout_marginTop="@dimen/dp5"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:text="Why do i need to provide my date of birth?"
+        android:textAlignment="center"
+        android:textColor="#7E8BF3"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/rl_email_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_title2"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="15sp"
+        android:background="@drawable/round_box3"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_bday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:hint="7 January 2002"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/et_bday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/dp12"
+                android:textColor="@color/white"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:gravity="center|end"
+            android:hint="20 years old"
+            android:paddingStart="@dimen/dp12"
+            android:paddingEnd="@dimen/dp15"
+            android:textColor="@color/white"
+            app:errorEnabled="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_email_number"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="25dp"
+        android:text="@string/bday_suggestion"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_bday_next"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_below="@+id/tv_suggestion"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="15sp"
+        android:layout_weight="1.0"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="#1B4C78"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+
+    <com.ycuwq.datepicker.date.DatePicker
+        android:id="@+id/datepicker"
+        style="@style/MyDatePickerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bday_next"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@color/black"
+        android:datePickerMode="spinner"
+        app:itemTextColor="@color/grey"
+        app:selectedTextColor="@color/white"
+        app:wheelCurtainBorder="true"
+        app:wheelCurtainBorderColor="@color/lightdrey"
+        app:wheelCurtainColor="@color/black"
+        app:wheelCyclic="true" />
+
+
+</RelativeLayout>

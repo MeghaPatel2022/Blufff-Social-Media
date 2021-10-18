@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">iQuePhoto</string>
+
+    <!-- START - Start screen. -->
+    <string name="gallery">Gallery</string>
+    <string name="error">Image wasn\'t selected!</string>
+    <!-- Start screen - END. -->
+
+    <!-- START - Share screen. -->
+    <string name="save">Save</string>
+    <!-- Share screen - END. -->
+
+    <!-- START - Share screen -->
+    <string name="application_does_not_exist">Application does not exist</string>
+    <string name="instagram_alert">For share you need to have Instagram installed.</string>
+    <string name="facebook_alert">For share you need to have Facebook installed.</string>
+    <string name="install">Install</string>
+    <string name="dismiss">Dismiss</string>
+
+
+    <string name="select_color">Select a color</string>
+
+    <string name="intensity">Intensity</string>
+
+    <!-- START - Crop. -->
+    <string name="crop">Crop</string>
+    <!-- Crop - END. -->
+
+    <!-- START - Stickers. -->
+    <string name="stickers">Stickers</string>
+    <string name="flags">Flags</string>
+    <string name="emoji">Emoji</string>
+    <string name="valentines_day">Valentines Day</string>
+    <!-- Stickers - END. -->
+
+    <!-- START - Orientation tool. -->
+    <string name="rotate">Rotate</string>
+    <!-- Orientation tool - END. -->
+
+    <!-- START - Text tool. -->
+    <string name="text">Text</string>
+    <string name="text_is_empty">Text field is empty, please type text before add it!</string>
+    <!-- Text tool - END. -->
+
+    <!-- START - For filters -->
+    <string name="filters">Filters</string>
+    <!-- For filters - END -->
+
+    <string name="kai_pan">Nothng</string>
+
+    <!-- START - Draw tool. -->
+    <string name="drawing">Drawing</string>
+
+    <!-- Draw tool - END -->
+
+    <!-- For frame tool. -->
+
+    <!-- For color picker. -->
+    <string name="rgb">RGB</string>
+    <string name="argb">ARGB</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+
+    <!-- START - For alerts. -->
+    <string name="on_back_alert">All your current edits will be lost and you will return to start screen!</string>
+    <string name="ok">OK</string>
+    <!-- For alerts. - END -->
+
+    <!-- START - Font picker dialog. -->
+    <string name="start_typing">Start typing…</string>
+    <string name="preview_text">Abc</string>
+    <!-- Font picker dialog - END. -->
+
+    <!-- START - ADJUST. -->
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="vignette">Vignette</string>
+    <string name="adjust">Adjust</string>
+    <string name="warmth">Temprature</string>
+    <string name="saturation">Saturation</string>
+    <string name="blur">Blur</string>
+    <!-- ADJUST - END. -->
+
+    <!-- START - Overlay -->
+
+    <!-- START - Transform -->
+    <string name="transform">Transform</string>
+    <string name="transform_straighten">Straighten</string>
+    <!-- Transform - END. -->
+
+    <!-- START - Progress dialog message -->
+    <!-- Progress dialog message - END. -->
+
+    <string name="transparency">Transparency</string>
+</resources>

@@ -1,0 +1,194 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.TBI.Client.Bluff"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        setProperty("archivesBaseName", "Bluff-$versionName")
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    compileOptions {
+        targetCompatibility = '1.8'
+        sourceCompatibility = '1.8'
+    }
+
+
+}
+
+dependencies {
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // GravityView
+    implementation 'co.gofynd.library:gravity-view:1.0'
+
+    // design material
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+
+    // For Design Pupose
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    // Butterknife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    // Toast message
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+    // country code picker
+    implementation 'com.github.joielechong:countrycodepicker:2.3.3'
+
+    // gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    // circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // spots dialoge
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+    // cropper
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
+    // card slider
+    implementation 'com.ramotion.cardslider:card-slider:0.3.1'
+
+    // VR VideoView
+    implementation 'com.google.vr:sdk-videowidget:1.180.0'
+    implementation 'com.github.ashqal:MD360Player4Android:2.5.0'
+
+    //Video Player
+    implementation "im.ene.toro3:toro:3.6.2.2903"
+    implementation "im.ene.toro3:toro-ext-exoplayer:3.6.2.2804"
+
+    // firebase & Authentication
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.firebase:firebase-ads:15.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+
+    // Loder
+    implementation 'com.airbnb.android:lottie:3.0.7'
+
+    // face detection
+    implementation 'io.fotoapparat:facedetector:1.0.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:3.9.0-SNAPSHOT'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:1.6.0-SNAPSHOT'
+
+    // Audio-Video
+    api project(':audiovideo'),
+            {
+                exclude group: 'com.github.bumptech.glide'
+            }
+
+    // location play services
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+
+    // Android Networking
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
+    // swipe button
+    implementation 'com.ebanx:swipe-button:0.8.3'
+
+    // Simmar effcat
+    implementation 'com.facebook.shimmer:shimmer:0.5.0@aar'
+
+    // Colorpicker
+    implementation 'com.github.duanhong169:colorpicker:1.1.6'
+
+    // Date Picker
+    implementation 'com.ycuwq.widgets:datepicker:1.3.1'
+
+    // Lable Switch
+    implementation 'com.github.angads25:toggle:1.1.0'
+
+    // Video Compressor
+    implementation 'com.github.tcking:giraffecompressor:0.1.4'
+
+    //AVLoader
+    implementation 'com.wang.avi:library:2.1.3'
+
+    implementation 'com.jarvanmo:exoplayerview:2.1.0'
+    implementation "im.ene.toro3:toro:3.0.0-beta1"
+    implementation "im.ene.toro3:toro-ext-exoplayer:3.6.2.2804"
+
+    // Pullback Lib
+    implementation 'com.github.oxoooo:pull-back-layout:1.0.1'
+
+    // Video Compressor
+    implementation 'com.nagihong:videocompressor:1.0.0'
+
+    // other
+    implementation 'javax.vecmath:vecmath:1.5.2'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.11.0"
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.github.pedromassango:doubleClick:3.0'
+    implementation project(path: ':iQphoto')
+    implementation project(path: ':cameraview')
+    implementation project(path: ':instatag')
+    implementation project(path: ':photoeditor')
+//    implementation project(path: ':library')
+    implementation "com.hendraanggrian.appcompat:socialview:0.2"
+    implementation "com.hendraanggrian.appcompat:socialview-commons:0.2"
+    implementation 'io.fotoapparat.fotoapparat:library:1.0.4'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.squareup.okhttp3:okhttp:3.7.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.7.0'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation group: 'org.bytedeco', name: 'javacv', version: '1.5.2'
+    implementation 'com.code-troopers.betterpickers:library:3.1.0'
+    implementation 'me.shaohui.advancedluban:library:1.3.5'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

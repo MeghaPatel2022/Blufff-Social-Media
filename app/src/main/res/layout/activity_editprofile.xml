@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Edit Profile"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtdone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Done"
+                android:textColor="@color/purple"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lntop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgCover"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/profile_placeholder1"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imguser"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-55dp"
+                android:src="@drawable/profile_placeholder1" />
+
+            <TextView
+                android:id="@+id/txtchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Change Profile Picture"
+                android:textColor="@color/textcolor"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lntop"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Full Name"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/edtfnamae"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="?attr/colorPrimary"
+                            android:fontFamily="@font/poppins_regular"
+                            android:inputType="textCapWords"
+                            android:singleLine="true"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Username"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/edtuname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="?attr/colorPrimary"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="E-mail Address"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/edtemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="?attr/colorPrimary"
+                            android:fontFamily="@font/poppins_regular"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Mobile Number"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.rilixtech.CountryCodePicker
+                                android:id="@+id/ccp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:ccp_defaultCode="91"
+                                app:ccp_defaultNameCode="IN"
+                                app:ccp_hideNameCode="true"
+                                app:ccp_hidePhoneCode="true"
+                                app:ccp_textColor="?attr/colorPrimary"
+                                app:ccp_textSize="18dp" />
+
+                            <EditText
+                                android:id="@+id/edtmobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:singleLine="true"
+                                android:textColor="?attr/colorPrimary"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?attr/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Profession"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16dp" />
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Spinner
+                                android:id="@+id/spinnerprofession"
+                                style="@style/SpinnerTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp"
+                                android:spinnerMode="dropdown"
+                                android:textSize="15dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/empty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_box"
+                                android:backgroundTint="?attr/background"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="15dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="15dp"
+                                android:spinnerMode="dropdown"
+                                android:text="No Profession Available"
+                                android:textColor="@color/blacklight"
+                                android:textSize="16dp"
+                                android:visibility="gone" />
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?attr/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Bio"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/edtdescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="?attr/colorPrimary"
+                            android:fontFamily="@font/poppins_regular"
+                            android:inputType="textCapWords"
+                            android:singleLine="true"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/relpushnoti"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="5dp"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="15dp"
+                                android:layout_toLeftOf="@+id/switchnotification"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="center"
+                                    android:text="Account Privacy"
+                                    android:textColor="?attr/colorPrimary"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColor="@color/greylight"
+                                    android:textSize="16dp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                            <com.github.angads25.toggle.widget.LabeledSwitch
+                                android:id="@+id/switchaccount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:textSize="0dp"
+                                app:colorBorder="@color/textcolor"
+                                app:colorOn="@color/textcolor"
+                                app:on="false" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

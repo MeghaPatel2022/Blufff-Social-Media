@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity.Post.LikeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/_5sdp"
+            android:src="@drawable/slide_arrow_left"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/img_send"
+            android:layout_toEndOf="@+id/img_back"
+            android:gravity="center|start"
+            android:text="Smiles"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_searcView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="13dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/chat_box"
+                android:backgroundTint="#25C6C4C4">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchdiscover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="visible"
+                    app:closeIcon="@drawable/close"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Search"
+                    app:searchHintIcon="@drawable/search"
+                    app:searchIcon="@drawable/search"
+                    app:showDividers="none"
+                    app:theme="@style/AppSearchView" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_postLike"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_searcView"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/noData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_searcView"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="0 Like"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginBottom="13dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_left_black_24dp"
+                android:tint="?attr/colorPrimary"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/img_back"
+                android:gravity="center|start"
+                android:text="Friends"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/chat_box"
+                android:backgroundTint="#25C6C4C4"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_follower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="gone"
+                    app:closeIcon="@drawable/close"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Search"
+                    app:searchHintIcon="@drawable/search"
+                    app:searchIcon="@drawable/search"
+                    app:showDividers="none"
+                    app:theme="@style/AppSearchView" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_following"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="gone"
+                    app:closeIcon="@drawable/close"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Search"
+                    app:searchHintIcon="@drawable/search"
+                    app:searchIcon="@drawable/search"
+                    app:showDividers="none"
+                    app:theme="@style/AppSearchView" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchrequested"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="visible"
+                    app:closeIcon="@drawable/close"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Search"
+                    app:searchHintIcon="@drawable/search"
+                    app:searchIcon="@drawable/search"
+                    app:showDividers="none"
+                    app:theme="@style/AppSearchView" />
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="gone"
+                    app:closeIcon="@drawable/close"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Search"
+                    app:searchHintIcon="@drawable/search"
+                    app:searchIcon="@drawable/search"
+                    app:showDividers="none"
+                    app:theme="@style/AppSearchView" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabfreind"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="?attr/background"
+        android:visibility="visible"
+        app:tabBackground="?attr/background"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/blue"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"
+        app:tabMaxWidth="@dimen/_70sdp"
+        app:tabMinWidth="@dimen/_70sdp"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/MyTextViewStyle" />
+
+    <TextView
+        android:id="@+id/txtempty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="No Follower yet."
+        android:textColor="@color/blacklight"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lstfollowing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

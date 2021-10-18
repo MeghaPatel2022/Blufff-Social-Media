@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165dp"
+    android:layout_height="165dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0"
+        android:background="@drawable/bubble_actions_item_name"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="Save"
+        android:textColor="@color/bubble_actions_text_color"
+        android:textSize="14dp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="@dimen/bubble_actions_bubble_dimension"
+        android:layout_height="@dimen/bubble_actions_bubble_dimension"
+        android:layout_gravity="center"
+        android:background="@drawable/bubble_item_unselected"
+        android:padding="20dp"
+        android:src="@drawable/share_white" />
+
+</merge>

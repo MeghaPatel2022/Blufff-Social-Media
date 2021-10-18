@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/unread_message_background"
+    android:backgroundTint="#4C4B5E">
+
+    <ImageView
+        android:id="@+id/galleryImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/apploizc_transparent_color"
+        android:scaleType="centerCrop"
+        android:src="@drawable/applozic_ic_action_add" />
+
+    <ImageView
+        android:id="@+id/mobicom_attachment_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/apploizc_transparent_color"
+        android:scaleType="fitXY"
+        android:src="@drawable/applozic_ic_action_attachment"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mobicom_attachment_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mobicom_attachment_image"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/mobicom_attachment_image"
+        android:layout_toRightOf="@+id/mobicom_attachment_image"
+        android:ellipsize="end"
+        android:text="@string/file_name_will_come_here_for_attachment"
+        android:textAlignment="viewStart"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/mobicom_attachment_file_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+        android:height="40dp"
+        android:background="#80000000"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:text="Hellowol"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/mobicom_attachment_delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:paddingBottom="10dp"
+        android:src="@drawable/mobicom_ic_delete_white_18dp"
+        android:tint="#ffffff" />
+</RelativeLayout>

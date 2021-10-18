@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/framTop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:transitionName="@string/picture_transition_name">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scaleType="fitXY" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/chat_box"
+            android:backgroundTint="@android:color/transparent"
+            android:visibility="gone" />
+
+        <com.google.vr.sdk.widgets.video.VrVideoView
+            android:id="@+id/vrView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/imgTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#50000000"
+        android:scaleType="fitXY"
+        android:visibility="visible" />
+
+    <com.harsh.instatag.InstaTag
+        android:id="@+id/instatagview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:canWeAddTags="false"
+        app:instaTextColor="@android:color/white" />
+
+
+    <ImageView
+        android:id="@+id/imgtagpeople"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/circle_indicator"
+        android:backgroundTint="#50ffffff"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/tag_detail"
+        android:tint="?attr/colorPrimary"
+        android:visibility="gone" />
+
+
+</FrameLayout>

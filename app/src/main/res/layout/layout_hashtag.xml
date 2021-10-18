@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_profile"
+    android:backgroundTint="#767676"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txthashtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end|center"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="right|end|center"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchlocatoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/txtcancel"
+            android:background="@drawable/edit_profile"
+            android:backgroundTint="#F6F7FC"
+            android:visibility="visible"
+            app:closeIcon="@drawable/cancel1"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="Search"
+            app:searchHintIcon="@drawable/search2"
+            app:searchIcon="@drawable/search2"
+            app:showDividers="none"
+            app:theme="@style/AppSearchView"></androidx.appcompat.widget.SearchView>
+
+        <TextView
+            android:id="@+id/txtcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Cancel"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blacklight"></View>
+
+
+    <ListView
+        android:id="@+id/lstlocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/background"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:padding="10dp"></ListView>
+
+    <TextView
+        android:id="@+id/txtempty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="No  Search result found"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/lnforeground1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/imgarchieve"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="-10dp"
+                        android:src="@drawable/blufff_logo_black"
+                        android:tint="?attr/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/imglogo"
+                        android:gravity="right|end">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tagchat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/imglogo"
+                            android:textAlignment="center"
+                            android:visibility="visible"
+                            app:tabBackground="@drawable/tab_item_selector1"
+                            app:tabGravity="fill"
+                            app:tabIndicatorFullWidth="false"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabMaxWidth="120dp"
+                            app:tabMinWidth="120dp"
+                            app:tabMode="fixed"
+                            app:tabPaddingTop="5dp"
+                            app:tabRippleColor="@android:color/transparent"
+                            app:tabTextAppearance="@style/tabtextstyle1" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagerchat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lnforeground1" />
+
+        <FrameLayout
+            android:id="@+id/contentfragment3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lnforeground1"
+            android:background="?attr/background"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

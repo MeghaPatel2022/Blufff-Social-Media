@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:titleMarginStart">50dp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+</resources>

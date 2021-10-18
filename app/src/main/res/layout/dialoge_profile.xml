@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_back_prof"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/dp15"
+        android:src="@drawable/slide_arrow_left"
+        android:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:text="@string/general_profile"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_profile_next"
+        android:layout_below="@+id/header_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="@dimen/dp150"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dp20"
+                android:src="@drawable/profile_placeholder" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_profile"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="15sp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_box3"
+                    android:hint="Full Name"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/et_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="@dimen/dp12"
+                        android:textColor="@color/white"
+                        app:errorEnabled="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_prof"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/input_full_name"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:background="@drawable/round_box3"
+                    android:dropDownWidth="@dimen/dp20"
+                    android:dropDownSelector="@color/white"
+                    android:gravity="start|center" />
+
+                <LinearLayout
+                    android:id="@+id/ll_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/spinner_prof"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:background="@drawable/round_box3"
+                    android:weightSum="2.0">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9"
+                        android:gravity="start|center"
+                        android:paddingLeft="@dimen/dp12"
+                        android:text="Account Privacy"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <com.github.angads25.toggle.widget.LabeledSwitch
+                        android:id="@+id/switch_profession"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:textSize="0dp"
+                        app:colorBorder="@color/lightdrey"
+                        app:colorOff="@color/lightdrey"
+                        app:colorOn="@color/white"
+                        app:on="false" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_dec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_switch"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:background="@drawable/round_box3"
+                    android:hint="Bio">
+
+                    <EditText
+                        android:id="@+id/et_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/dp12"
+                        android:paddingTop="10sp"
+                        android:textColor="@color/white"
+                        app:errorEnabled="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_profile_next"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="@dimen/dp20"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="#1B4C78"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

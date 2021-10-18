@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relcamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/framecreate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_box"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:id="@+id/lngravity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/edttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:gravity="center"
+                    android:hint="Tap to Type"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="20dp"></EditText>
+            </FrameLayout>
+
+
+            <ImageView
+                android:id="@+id/imgclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|end"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/cancel"></ImageView>
+
+            <FrameLayout
+                android:id="@+id/frameadd"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|end|center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/white">
+
+                <!-- <ImageView
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
+
+                     android:backgroundTint="@color/white"
+                     android:scaleType="fitXY"
+                     android:visibility="gone"></ImageView>-->
+
+                <ImageView
+                    android:id="@+id/imggradint"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"></ImageView>
+
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imgalin"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/centre_justify"></ImageView>
+
+                <ImageView
+                    android:id="@+id/imgback"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/imgalin"
+                    android:src="@drawable/text_style"></ImageView>
+
+                <TextView
+                    android:id="@+id/txtfont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/font_box"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="8dp"
+                    android:text="Classic"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"></TextView>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="120dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameeditimage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgborderback"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/white"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/imgedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/black"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/eyedropper"
+                        android:tint="@color/white"></ImageView>
+                </FrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclecolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"></androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativecamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <com.otaliastudios.cameraview.CameraView
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/chat_box"
+                android:backgroundTint="@android:color/transparent"
+                android:keepScreenOn="true"
+                app:cameraAudio="on"
+                app:cameraAutoFocusMarker="@string/cameraview_default_autofocus_marker"
+                app:cameraEngine="camera2"
+                app:cameraExperimental="true"
+                app:cameraFacing="back"
+                app:cameraFlash="on"
+                app:cameraGestureLongTap="none"
+                app:cameraGesturePinch="zoom"
+                app:cameraGestureScrollHorizontal="filterControl1"
+                app:cameraGestureScrollVertical="exposureCorrection"
+                app:cameraGestureTap="autoFocus"
+                app:cameraGrid="off"
+                app:cameraMode="picture"
+                app:cameraPictureSnapshotMetering="true"
+                app:cameraPlaySounds="true"
+                app:cameraPreview="glSurface">
+
+                <ImageView
+                    android:id="@+id/watermark"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/add_image"
+                    android:visibility="gone"
+                    app:layout_drawOnPictureSnapshot="true"
+                    app:layout_drawOnPreview="true"
+                    app:layout_drawOnVideoSnapshot="true" />
+
+            </com.otaliastudios.cameraview.CameraView>
+
+
+            <LinearLayout
+                android:id="@+id/lnadd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txttimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/white"
+                android:textSize="150dp" />
+
+            <RelativeLayout
+                android:id="@+id/relclick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/imgfilter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/photo_filter"
+                    android:tint="@color/white"></ImageView>
+
+                <ImageView
+                    android:id="@+id/imgflash"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/imgtimer"
+                    android:src="@drawable/flash_auto"
+                    android:tint="@color/textcolor" />
+
+                <ImageView
+                    android:id="@+id/imgtimer"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/imggrid"
+                    android:src="@drawable/timer_off"
+                    android:tint="@color/red" />
+
+                <ImageView
+                    android:id="@+id/imggrid"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/grid"
+                    android:tint="@color/white" />
+
+
+                <LinearLayout
+                    android:id="@+id/lntimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imggrid"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_box"
+                    android:backgroundTint="#30000000"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/timer_off"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/timer_off" />
+
+                    <ImageView
+                        android:id="@+id/timer_2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/timer2" />
+
+                    <ImageView
+                        android:id="@+id/timer_5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/timer5" />
+
+                    <ImageView
+                        android:id="@+id/timer_10"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/timer10" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnflash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imggrid"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_box"
+                    android:backgroundTint="#30000000"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/flash_off"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/flash_off" />
+
+                    <ImageView
+                        android:id="@+id/flashauto"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/flash_auto" />
+
+                    <ImageView
+                        android:id="@+id/flashon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/flash_on" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnclick"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"></LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclefilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="150dp"
+                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgclick"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center|bottom"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="camera.json"
+                    app:lottie_loop="true" />
+
+
+                <ImageView
+                    android:id="@+id/imggallery"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|end|bottom"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/gallery"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imgsktrech"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/create"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

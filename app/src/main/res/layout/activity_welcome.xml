@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPages.WelcomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/welcome_new" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:weightSum="2.0">
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/shape_rounded"
+            android:backgroundTint="#329EFF"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_weight="1.0"
+            android:background="@drawable/shape_rounded"
+            android:backgroundTint="#1B4C78"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Already a member? Login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+    </LinearLayout>
+
+</RelativeLayout>

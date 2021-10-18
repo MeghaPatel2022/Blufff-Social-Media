@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="whitesmoke">#f5f5f5</color>
+    <color name="mobitexter_main_color">#ff33B5E5</color>
+
+    <color name="instruction_color">#ff337ab7</color>
+    <color name="empty_conversation_text_color">#838b83</color>
+    <color name="edittext_hint_color">#bdbdbd</color>
+
+    <color name="red">#FF0000</color>
+    <color name="grey">#EBE9E9</color>
+
+    <color name="message_text_color">#ff000000</color>
+    <!--<color name="received_message_bg_color">#ffffffff</color>-->
+
+    <!-- <color name="sent_message_bg_color">#ff3EABF6</color>-->
+
+    <color name="applozic_send_message_layout_background_color">#ffffffff</color>
+    <color name="message_details_text_color">#838b83</color>
+    <color name="conversation_list_all_background">#FFFFFFFF</color>
+    <!-- <color name="conversation_list_all_background">#FFFAFAFA</color> -->
+
+    <color name="conversation_list_background">#FFFAFAFA</color>
+    <!--  <color name="conversation_list_background">#FFF1F1F1</color> -->
+
+
+    <color name="receivebox">#4C4B5E</color>
+    <color name="sendbox">#ff0000</color>
+    <color name="message_action_button">#FFE5E4E2</color>
+
+    <color name="incoming_call">#ff0099cc</color>
+    <color name="outgoing_call">#ff008000</color>
+    <color name="sendersave">#fffd38</color>
+    <color name="senderunsaved">#50fffd38</color>
+    <color name="receivesave">#E93423</color>
+    <color name="receiveunsave">#50E93423</color>
+
+
+    <color name="applozic_theme_color">#FFB3E5FC</color>
+    <color name="applozic_theme_color_primary">#FF03A9F4</color>
+    <color name="applozic_theme_color_accent">#FF607D8B</color>
+    <color name="km_list_item_header_text_color">#5c5aa7</color>
+    <color name="km_list_item_text_color">#646262</color>
+    <color name="km_list_item_divider_color">#e5e5e5</color>
+    <color name="km_header_text_background">#e6e5ec</color>
+    <color name="km_list_item_action_color">#504db0</color>
+    <color name="km_list_item_main_header_text_color">#686464</color>
+    <color name="applozic_theme_color_control_activated">#ff0099cc</color>
+    <color name="applozic_theme_color_control_highlight">#ff0099ee</color>
+    <color name="applozic_theme_divider">#FFB6B6B6</color>
+    <color name="applozic_message_border_color">#ffffff</color>
+
+    <color name="error_background_color">#ff0000</color>
+    <color name="applozic_share_contact_divider">#FFB6B6B6</color>
+    <color name="applozic_lite_black_color">#b2b2b2</color>
+    <color name="applozic_green_color">#5fba7d</color>
+    <color name="applozic_profile_devider_color">#F8F8F8</color>
+    <color name="applozic_location_view_divider_color">#d2d2d2</color>
+    <color name="apploizc_transparent_color">#00000000</color>
+    <color name="apploizc_dark_black_color">#ff000000</color>
+    <color name="apploizc_darker_gray_color">#aaa</color>
+    <color name="apploizc_gray_color">#333333</color>
+    <color name="apploizc_lite_gray_color">#666666</color>
+    <color name="apploizc_custom_channel_message_text_color">#cccccc</color>
+</resources>

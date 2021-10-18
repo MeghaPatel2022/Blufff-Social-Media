@@ -1,0 +1,169 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ActivityTheme.Primary.Base.Light" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background">@color/white</item>
+        <item name="colorError">@color/white</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="textColorSearchUrl">#60E0E6F1</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:fontFamily">@font/modern</item>
+    </style>
+
+
+    <style name="ActivityTheme.Primary.Base.Dark" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background">@color/black</item>
+        <item name="colorError">@color/blackdark</item>
+        <item name="textColorSearchUrl">#603d3d3d</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:fontFamily">@font/modern</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+        <!--        <item name="android:windowTranslucentStatus">true</item>-->
+        <!--        <item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">13dp</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/Theme.NoTitleBar</item>
+        <item name="DialogSpotColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="DialogTitleText">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/modern</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:background">@drawable/bg_spinner</item>
+        <item name="android:fontFamily">@font/modern</item>
+    </style>
+
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@drawable/tab_item_selector</item>
+
+    </style>
+
+    <style name="tabtextstyle" parent="android:Widget.TextView">
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:gravity">right|end</item>
+        <item name="android:layout_gravity">right|end</item>
+        <item name="android:background">@drawable/tab_item_selector1</item>
+        <item name="android:textColor">@drawable/tabselectcolor</item>
+
+    </style>
+
+    <style name="tabtextstyle1" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:gravity">right|end|center</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_gravity">right|end|center</item>
+        <item name="android:background">@drawable/tab_item_selector1</item>
+        <item name="android:textColor">@drawable/tabselectcolor</item>
+
+    </style>
+
+
+    <style name="animationName" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="showimages" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="CustomPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!-- if using android.widget.PopupMenu -->
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:popupBackground">@color/blacklight</item>
+        <item name="android:itemBackground">@color/blacklight</item>
+        <item name="android:textColor">@color/white</item>
+
+        <!-- if using android.support.v7.widget.PopupMenu -->
+        <!--  <item name="popupMenuStyle">@style/PopupMenu</item>-->
+    </style>
+
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:popupBackground">@color/blacklight</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="MyCheckBoxstyle" parent="ActivityTheme.Primary.Base.Dark">
+
+        <item name="colorAccent">@color/colorAccent</item>
+        // for checked
+        <item name="android:textColorSecondary">@color/blacklight</item>
+        // for unchecked
+        <item name="android:fontFamily">@font/modern</item>
+
+
+        <!--<item name="colorControlNormal">@color/blacklight</item>
+        <item name="colorControlActivated">@color/textcolor</item>-->
+    </style>
+
+    <style name="rating_bar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">@dimen/_50sdp</item>
+        <item name="android:maxHeight">@dimen/_50sdp</item>
+    </style>
+
+    <!--    <style name="CustomRatingBar" parent="Theme.AppCompat">-->
+    <!--        <item name="buttonBarButtonStyle">@drawable/ratingbar</item>-->
+    <!--&lt;!&ndash;        <item name="colorControlActivated">#FFFF00</item>&ndash;&gt;-->
+    <!--    </style>-->
+
+    <!-- <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+         <item name="colorAccent">@color/textcolor</item>
+         <item name="android:textColorSecondary">?attr/colorPrimary</item>
+     </style>-->
+
+
+    <!--<style name="AppTheme.Draggable" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">?attr/background</item>
+    </style>-->
+
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:colorControlActivated">#fff</item>
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarViewShown">false</item>
+    </style>
+
+</resources>

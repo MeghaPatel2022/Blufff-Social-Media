@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_back_otp"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="@dimen/dp15"
+        android:src="@drawable/slide_arrow_left"
+        android:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90sp"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:text="@string/conf_code"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/header_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_title"
+        android:layout_marginTop="@dimen/dp20"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:text="Enter 4-digit code we sent to"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/header_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_title1"
+        android:layout_marginTop="@dimen/dp5"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:text="+91 XXX XXXX 222"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/header_title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_title2"
+        android:layout_marginTop="@dimen/dp5"
+        android:fontFamily="@font/poppins_semibold"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:text="Request a new one"
+        android:textAlignment="center"
+        android:textColor="#7E8BF3"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_email_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_title3"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="15sp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_box3"
+            android:hint="XXXXXX"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/dp12"
+                android:textColor="@color/white"
+                app:errorEnabled="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ot_next"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_below="@+id/rl_email_number"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="15sp"
+        android:layout_weight="1.0"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="#1B4C78"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+</RelativeLayout>

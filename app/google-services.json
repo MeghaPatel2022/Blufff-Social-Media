@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "903226953568",
+    "firebase_url": "https://blufff-43e54.firebaseio.com",
+    "project_id": "blufff-43e54",
+    "storage_bucket": "blufff-43e54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903226953568:android:ecf60b5bc8a9603b",
+        "android_client_info": {
+          "package_name": "com.TBI.Client.Bluff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903226953568-pslqpo83b7rs411s8g0sio1fcu5h6f8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.TBI.Client.Bluff",
+            "certificate_hash": "2ef4850f713a22e298859b74ceca500a7ad13d66"
+          }
+        },
+        {
+          "client_id": "903226953568-4sr7ddko64o2mutsup98ic17phuh11tv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMQuBzGsOOdYWdeJPuQZ59k6BNn2lV1A4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903226953568-4sr7ddko64o2mutsup98ic17phuh11tv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

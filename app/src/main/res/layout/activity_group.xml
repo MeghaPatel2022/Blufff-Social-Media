@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginBottom="13dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lnforeground1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/imgarchieve"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="-10dp"
+                        android:src="@drawable/blufff_logo_black"
+                        android:tint="?attr/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/imglogo"
+                        android:gravity="right|end">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tagchat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/imglogo"
+                            android:textAlignment="center"
+                            android:visibility="visible"
+                            app:tabBackground="@drawable/tab_item_selector1"
+                            app:tabGravity="fill"
+                            app:tabIndicatorFullWidth="false"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabMaxWidth="120dp"
+                            app:tabMinWidth="120dp"
+                            app:tabMode="fixed"
+                            app:tabPaddingTop="5dp"
+                            app:tabRippleColor="@android:color/transparent"
+                            app:tabTextAppearance="@style/tabtextstyle1" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagerchat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lnforeground1" />
+
+        <FrameLayout
+            android:id="@+id/contentfragment3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lnforeground1"
+            android:background="?attr/background"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="17dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="5.0">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        android:weightSum="2.0">
+
+                        <ImageView
+                            android:id="@+id/imgMyLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="left"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/map1_unselected" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.4"
+                            android:fontFamily="@font/poppins_black"
+                            android:gravity="center"
+                            android:text="Map"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        android:weightSum="2.0">
+
+                        <ImageView
+                            android:id="@+id/imgwall"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/look1_unselected" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.4"
+                            android:fontFamily="@font/poppins_black"
+                            android:gravity="center"
+                            android:text="look"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:weightSum="2.0">
+
+                        <ImageView
+                            android:id="@+id/imgcamera"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/camera_unselected" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.4"
+                            android:fontFamily="@font/poppins_black"
+                            android:gravity="center"
+                            android:text="view"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        android:weightSum="2.0">
+
+                        <ImageView
+                            android:id="@+id/imgchat"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/catch_unselected" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:fontFamily="@font/poppins_black"
+                            android:gravity="center"
+                            android:text="Catch"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        android:weightSum="2.0">
+
+                        <ImageView
+                            android:id="@+id/imgProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/me_unselected" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:fontFamily="@font/poppins_black"
+                            android:gravity="center"
+                            android:text="me"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/imgsaved"-->
+                <!--                    android:layout_width="100dp"-->
+                <!--                    android:layout_height="25dp"-->
+                <!--                    android:layout_alignParentRight="true"-->
+                <!--                    android:layout_centerInParent="true"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:rotation="180"-->
+                <!--                    android:src="@drawable/blufff_logo_white"-->
+                <!--                    android:tint="?attr/colorPrimary"></ImageView>-->
+
+
+            </RelativeLayout>
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/imgmap"-->
+            <!--                    android:layout_width="25dp"-->
+            <!--                    android:layout_height="33dp"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:src="@drawable/map_outline"-->
+            <!--                    android:tint="?attr/colorPrimary"-->
+            <!--                    android:visibility="gone" />-->
+
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:visibility="gone">-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

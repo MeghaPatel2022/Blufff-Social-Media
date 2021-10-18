@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <GridView
+            android:id="@+id/griddiscover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth" />
+
+        <ListView
+            android:id="@+id/listwall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/background"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/imgsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end|bottom"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/search1"
+            android:tint="@color/white"
+            android:visibility="gone"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </FrameLayout>
+
+</LinearLayout>

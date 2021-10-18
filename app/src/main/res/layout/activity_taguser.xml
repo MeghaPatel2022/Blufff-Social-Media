@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lntag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Tag People"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/txtdone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Done"
+                android:textColor="@color/textcolor"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleimages"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewimages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible"></androidx.viewpager.widget.ViewPager>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Tap on photo to tag people"
+            android:textColor="@color/colorBackground"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnsearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchdiscover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/txtcancel"
+                android:background="@drawable/edit_profile"
+                android:backgroundTint="#F6F7FC"
+                android:visibility="visible"
+                app:closeIcon="@drawable/cancel1"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="Search"
+                app:searchHintIcon="@drawable/search2"
+                app:searchIcon="@drawable/search2"
+                app:showDividers="none"
+                app:theme="@style/AppSearchView"></androidx.appcompat.widget.SearchView>
+
+
+            <TextView
+                android:id="@+id/txtcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Cancel"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lstuserlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:padding="10dp"
+            android:scrollbars="none"></ListView>
+
+        <TextView
+            android:id="@+id/txtempty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No people found"
+            android:textColor="@color/blacklight"
+            android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

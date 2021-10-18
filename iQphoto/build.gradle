@@ -1,0 +1,99 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 25
+    // resourcePrefix 'iQphoto'
+    defaultConfig {
+        //applicationId "net.iquesoft.iquephoto"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    /*implementation 'com.arello-mobile:moxy:1.4.4'
+    implementation 'com.arello-mobile:moxy-app-compat:1.4.4'
+    annotationProcessor  'com.arello-mobile:moxy-compiler:1.4.4'*/
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+
+    implementation "tech.schoolhelper:moxy-x:1.7.0"
+    //implementation "tech.schoolhelper:moxy-x-android:1.7.0"
+    implementation 'tech.schoolhelper:moxy-x-androidx:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    annotationProcessor "tech.schoolhelper:moxy-x-compiler:1.7.0"
+
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    /*  implementation 'com.google.dagger:dagger:2.8'
+    annotationProcessor  'com.google.dagger:dagger-compiler:2.8'*/
+
+    implementation "com.google.dagger:dagger:2.12"
+    implementation "com.google.dagger:dagger-android-support:2.12"
+    annotationProcessor "com.google.dagger:dagger-android-processor:2.12"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.12"
+
+    implementation 'com.isseiaoki:simplecropview:1.1.4'
+    implementation 'org.adw.library:discrete-seekbar:1.0.1'
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.7.0@aar'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.github.yalantis:ucrop:2.2.4'
+    // circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.isseiaoki:simplecropview:1.1.8'
+    implementation 'jp.wasabeef:blurry:3.0.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:3.9.0-SNAPSHOT'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:1.6.0-SNAPSHOT'
+
+    // For Design Pupose
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //ImageComressor
+    implementation 'me.shaohui.advancedluban:library:1.3.5'
+
+    //AVLoader
+    implementation 'com.wang.avi:library:2.1.3'
+
+    // Simmar effcat
+    implementation 'com.facebook.shimmer:shimmer:0.5.0@aar'
+
+    /*implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'*/
+    //implementation project(path: ':app')
+    // implementation project(path: ':app')
+}
